@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Pesquisa de Satisfação</h1>
+
+    <p method="post" action="processar-pesquisa.html">
+      <section>
+        <h2>Dados Pessoais</h2>
+
+        <p>
+          <label for="nome"> Nome: </label>
+
+          <input type="text" id="nome" />
+        </p>
+        <p>
+          <label for="email"> E-mail:</label>
+
+          <input type="email" id="email" />
+        </p>
+        <p>
+          <label for="telefone"> Telefone: </label>
+
+          <input type="tel" id="telefone" />
+        </p>
+      </section>
+      <h2>Dados de Pesquisa</h2>
+        <p><strong>O que você acha do game Dark Souls?</strong></p>
+    <p>
+        <input type="radio" id="otimo" name="opnião-darksouls"/>
+        <label for="otimo">Ótimo</label>
+
+        <input type="radio" id="bom" name="opnião-darksouls"/>
+        <label for="bom">Bom</label>
+
+        <input type="radio" id="ruim" name="opnião-darksouls"/>
+        <label for="ruim">Ruim</label>
+
+        <input type="radio" id="pessimo" name="opnião-darksouls"/>
+        <label for="pessimo">Péssimo</label>
+      </p>
+      <p><strong>O que achou da trilha sonora do game?</strong> </p>
+     
+      <p>
+        <input type="radio" id="otimo" name="opnião-trilha-sonora"/>
+        <label for="otimo">Ótimo</label>
+
+        <input type="radio" id="bom" name="opnião-trilha-sonora"/>
+        <label for="bom">Bom</label>
+
+        <input type="radio" id="ruim" name="opnião-trilha-sonora"/>
+        <label for="ruim">Ruim</label>
+
+        <input type="radio" id="pessimo" name="opnião-trilha-sonora"/>
+        <label for="pessimo">Péssimo</label>
+      </p>
+      <p><strong>Qual classe você mais gosta de joga?</strong></p>
+      <p>
+        <label for="opcoes"><strong>Escolha uma opção:</strong></label>
+        <select id="opcoes" name="opcoes">
+          <option value="opcao1">Guerreiro</option>
+          <option value="opcao2">Cavaleiro</option>
+          <option value="opcao3">Clérigo</option>
+          <option value="opcao4">Sacerdote</option>
+          <option value="opcao5">Piromante</option>
+          <option value="opcao6">Ladrão</option>
+          <option value="opcao7">Bandido</option>
+          <option value="opcao8">Caçador</option>
+          <option value="opcao9">Espadachim</option>
+          <option value="opcao10">Despojado</option>
+        </select>
+      </p>
+        <input type="checkbox" id="compartilhamento-dados"/>
+        <label for="compartilhamento-dados"> <strong>Concordo em compartilhar os dados da pesquisa.</strong></label>
+      </p>
+      <input type="submit" value="Enviar"/>
+  
+      </section>
+    </form>
+  </body>
+</html>
